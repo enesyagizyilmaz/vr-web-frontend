@@ -12,6 +12,7 @@ import {ErrorsPage} from '../modules/errors/ErrorsPage'
 import {Logout, AuthPage, useAuth} from '../modules/auth'
 import {App} from '../App'
 
+
 /**
  * Base URL of the website.
  *
@@ -19,6 +20,9 @@ import {App} from '../App'
  */
 const {PUBLIC_URL} = process.env
 
+const enesX = () => {
+
+}
 const AppRoutes: FC = () => {
   const {currentUser} = useAuth()
   return (
