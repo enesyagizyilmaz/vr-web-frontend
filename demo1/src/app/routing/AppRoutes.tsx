@@ -20,8 +20,8 @@ import {App} from '../App'
  */
 const {PUBLIC_URL} = process.env
 
-const enes = () => {
-  
+const enesX = () => {
+
 }
 const AppRoutes: FC = () => {
   const {currentUser} = useAuth()
