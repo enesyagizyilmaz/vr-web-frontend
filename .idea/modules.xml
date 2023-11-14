@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/metronic_react_v8.2.0_demo1.iml" filepath="$PROJECT_DIR$/.idea/metronic_react_v8.2.0_demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vr-web-frontend.iml" filepath="$PROJECT_DIR$/.idea/vr-web-frontend.iml" />
     </modules>
   </component>
 </project>
