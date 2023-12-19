@@ -116,7 +116,7 @@ const DashboardPage: FC = () => (
 const DashboardWrapper: FC = () => {
   return (
     <>
-      <PageTitle breadcrumbs={[]}>Multipurpose - enes</PageTitle>
+      <PageTitle breadcrumbs={[]}>Multipurpose</PageTitle>
       <DashboardPage />
     </>
   )
