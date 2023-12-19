@@ -31,7 +31,6 @@ const initAuthContextPropsState = {
 }
 
 const AuthContext = createContext<AuthContextProps>(initAuthContextPropsState)
-
 const useAuth = () => {
   return useContext(AuthContext)
 }
