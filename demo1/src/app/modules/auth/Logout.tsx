@@ -1,17 +1,19 @@
-import {useEffect} from 'react'
+import {useContext, useEffect} from 'react'
 import {Navigate, Routes} from 'react-router-dom'
 import {useAuth} from './core/Auth'
+import {AuthContext} from "../../vr-web-frontend/context/AuthContext";
 
 export function Logout() {
-  const {logout} = useAuth()
+  const authState = useContext(AuthContext);
   useEffect(() => {
-    logout()
-    document.location.reload()
-  }, [logout])
+    if (authState && authState.onLogoutSuccess) {
+      authState.onLogoutSuccess();
+    }
+  }, [authState]);
 
   return (
     <Routes>
-      <Navigate to='/auth/login' />
+      <Navigate to='/login' />
     </Routes>
   )
 }
