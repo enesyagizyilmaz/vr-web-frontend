@@ -9,7 +9,6 @@ import {toAbsoluteUrl} from "../../../_metronic/helpers";
 const Login = () =>
 {
     const authState = useContext(AuthContext);
-
     const [email, setEmail] = useState<string | undefined>();
     const [password, setPassword] = useState<string | undefined>();
     const [apiProgress, setApiProgress] = useState(false);
@@ -42,15 +41,13 @@ const Login = () =>
         try
         {
             const response = await login({email,password});
-            if (authState.onLoginSuccess) {
+            if (authState.onLoginSuccess)
+            {
                 authState.onLoginSuccess(response.data.user)
-                console.log(response.data.user.id)
-
             }
         }
         catch(axiosError:any)
         {
-
             if (axiosError.response?.data)
             {
                 if (axiosError.response.data.status === 400)
@@ -114,7 +111,6 @@ const Login = () =>
                 </div>
             </div>
 
-
             <div className='separator separator-content my-14'>
                 <span className='w-125px text-gray-500 fw-semibold fs-7'>Or with email</span>
             </div>
@@ -132,7 +128,6 @@ const Login = () =>
                             >
                             </Input>
                         </div>
-
                         <div className='fv-row mb-8'>
                             <Input
                                 id={"password"}
@@ -143,14 +138,11 @@ const Login = () =>
                             >
                             </Input>
                         </div>
-
-
                         <div className='d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8'><div />
                             <Link to='/auth/forgot-password' className='link-primary'>
                                 Forgot Password ?
                             </Link>
                         </div>
-
                         <div className='d-grid mb-10'>
                             <Button
                                 disabled={!email && !password}

@@ -12,7 +12,6 @@ import {AuthPage} from "../pages/AuthPage";
 const AppRoutes: FC = () =>
 {
   const authState = useContext(AuthContext);
-
   return (
     <BrowserRouter>
       <Routes>

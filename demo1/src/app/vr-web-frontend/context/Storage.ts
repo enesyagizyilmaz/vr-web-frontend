@@ -8,9 +8,12 @@ export function loadAuthState()
     const defaultState = {id:0};
     const authStateInStorage = localStorage.getItem('auth');
     if (!authStateInStorage) return defaultState;
-    try {
+    try
+    {
         return JSON.parse(authStateInStorage)
-    }catch{
+    }
+    catch
+    {
         return defaultState;
     }
 }

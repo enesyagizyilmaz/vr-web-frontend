@@ -15,106 +15,72 @@ const SidebarMenuMain = () => {
         title={"Dashboard"}
         fontIcon='bi-app-indicator'
       />
-      <SidebarMenuItem to='/builder' icon='switch' title='Layout Builder' fontIcon='bi-layers' />
-      <div className='menu-item'>
-        <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Crafted</span>
+
+        <div className='menu-item'>
+            <div className='menu-content pt-8 pb-2'>
+                <span className='menu-section text-muted text-uppercase fs-8 ls-1'>VR</span>
+            </div>
         </div>
-      </div>
-      <SidebarMenuItemWithSub
-        to='/crafted/pages'
-        title='Pages'
-        fontIcon='bi-archive'
-        icon='element-plus'
-      >
-        <SidebarMenuItemWithSub to='/crafted/pages/profile' title='Profile' hasBullet={true}>
-          <SidebarMenuItem to='/crafted/pages/profile/overview' title='Overview' hasBullet={true} />
-          <SidebarMenuItem to='/crafted/pages/profile/projects' title='Projects' hasBullet={true} />
-          <SidebarMenuItem
-            to='/crafted/pages/profile/campaigns'
-            title='Campaigns'
-            hasBullet={true}
-          />
-          <SidebarMenuItem
-            to='/crafted/pages/profile/documents'
-            title='Documents'
-            hasBullet={true}
-          />
-          <SidebarMenuItem
-            to='/crafted/pages/profile/connections'
-            title='Connections'
-            hasBullet={true}
-          />
+
+        <SidebarMenuItemWithSub
+            to='/apps/chat'
+            title='Simulation Videos'
+            fontIcon='bi-chat-left'
+            icon='message-text-2'
+        >
+            <SidebarMenuItem to='vr/simulation-videos/video-1' title='Video 1' hasBullet={true} />
+            <SidebarMenuItem to='vr/simulation-videos/video-2' title='Video 2' hasBullet={true} />
+            <SidebarMenuItem to='vr/simulation-videos/video-3' title='Video 3' hasBullet={true} />
+            <SidebarMenuItem to='vr/simulation-videos/video-4' title='Video 4' hasBullet={true} />
+            <SidebarMenuItem to='vr/simulation-videos/video-5' title='Video 5' hasBullet={true} />
         </SidebarMenuItemWithSub>
 
-        <SidebarMenuItemWithSub to='/crafted/pages/wizards' title='Wizards' hasBullet={true}>
-          <SidebarMenuItem
-            to='/crafted/pages/wizards/horizontal'
-            title='Horizontal'
-            hasBullet={true}
-          />
-          <SidebarMenuItem to='/crafted/pages/wizards/vertical' title='Vertical' hasBullet={true} />
-        </SidebarMenuItemWithSub>
-      </SidebarMenuItemWithSub>
-      <SidebarMenuItemWithSub
-        to='/crafted/accounts'
-        title='Accounts'
-        icon='profile-circle'
-        fontIcon='bi-person'
-      >
-        <SidebarMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
-      </SidebarMenuItemWithSub>
-      <SidebarMenuItemWithSub to='/error' title='Errors' fontIcon='bi-sticky' icon='cross-circle'>
-        <SidebarMenuItem to='/error/404' title='Error 404' hasBullet={true} />
-        <SidebarMenuItem to='/error/500' title='Error 500' hasBullet={true} />
-      </SidebarMenuItemWithSub>
-      <SidebarMenuItemWithSub
-        to='/crafted/widgets'
-        title='Widgets'
-        icon='element-7'
-        fontIcon='bi-layers'
-      >
-        <SidebarMenuItem to='/crafted/widgets/lists' title='Lists' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/statistics' title='Statistics' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/charts' title='Charts' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/mixed' title='Mixed' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/tables' title='Tables' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/widgets/feeds' title='Feeds' hasBullet={true} />
-      </SidebarMenuItemWithSub>
       <div className='menu-item'>
-        <div className='menu-content pt-8 pb-2'>
-          <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Apps</span>
-        </div>
+          <div className='menu-content pt-8 pb-2'>
+              <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Tests</span>
+          </div>
       </div>
-      <SidebarMenuItemWithSub
-        to='/apps/chat'
-        title='Chat'
-        fontIcon='bi-chat-left'
-        icon='message-text-2'
-      >
-        <SidebarMenuItem to='/apps/chat/private-chat' title='Private Chat' hasBullet={true} />
-        <SidebarMenuItem to='/apps/chat/group-chat' title='Group Chart' hasBullet={true} />
-        <SidebarMenuItem to='/apps/chat/drawer-chat' title='Drawer Chart' hasBullet={true} />
-      </SidebarMenuItemWithSub>
-      <SidebarMenuItem
-        to='/apps/user-management/users'
-        icon='abstract-28'
-        title='User management'
-        fontIcon='bi-layers'
-      />
-      <div className='menu-item'>
-        <a
-          target='_blank'
-          className='menu-link'
-          href={process.env.REACT_APP_PREVIEW_DOCS_URL + '/docs/changelog'}
+
+        <SidebarMenuItemWithSub
+            to='/apps/chat'
+            title='5. Grade'
+            fontIcon='bi-chat-left'
+            icon='message-text-2'
         >
-          <span className='menu-icon'>
-            <KTIcon iconName='code' className='fs-2' />
-          </span>
-          <span className='menu-title'>Changelog {process.env.REACT_APP_VERSION}</span>
-        </a>
-      </div>
+            <SidebarMenuItem to='tests/grade-5/test-1' title='Test 1' hasBullet={true} />
+            <SidebarMenuItem to='tests/grade-5/test-2' title='Test 2' hasBullet={true} />
+        </SidebarMenuItemWithSub>
+
+        <SidebarMenuItemWithSub
+            to='/apps/chat'
+            title='6. Grade'
+            fontIcon='bi-chat-left'
+            icon='message-text-2'
+        >
+            <SidebarMenuItem to='tests/grade-6/test-1' title='Test 1' hasBullet={true} />
+            <SidebarMenuItem to='tests/grade-6/test-2' title='Test 2' hasBullet={true} />
+        </SidebarMenuItemWithSub>
+
+        <SidebarMenuItemWithSub
+            to='/apps/chat'
+            title='7. Grade'
+            fontIcon='bi-chat-left'
+            icon='message-text-2'
+        >
+            <SidebarMenuItem to='tests/grade-7/test-1' title='Test 1' hasBullet={true} />
+            <SidebarMenuItem to='tests/grade-7/test-2' title='Test 2' hasBullet={true} />
+        </SidebarMenuItemWithSub>
+
+        <SidebarMenuItemWithSub
+            to='/apps/chat'
+            title='8. Grade'
+            fontIcon='bi-chat-left'
+            icon='message-text-2'
+        >
+            <SidebarMenuItem to='tests/grade-8/test-1' title='Test 1' hasBullet={true} />
+            <SidebarMenuItem to='tests/grade-8/test-2' title='Test 2' hasBullet={true} />
+        </SidebarMenuItemWithSub>
+
     </>
   )
 }

@@ -7,6 +7,19 @@ import {MenuTestPage} from '../../pages/MenuTestPage'
 import {getCSSVariableValue} from '../../../_metronic/assets/ts/_utils'
 import {WithChildren} from '../../../_metronic/helpers'
 import BuilderPageWrapper from '../../pages/layout-builder/BuilderPageWrapper'
+import Video1 from "../pages/vr/simulation-videos/Video1";
+import Video2 from "../pages/vr/simulation-videos/Video2";
+import Video3 from "../pages/vr/simulation-videos/Video3";
+import Video4 from "../pages/vr/simulation-videos/Video4";
+import Video5 from "../pages/vr/simulation-videos/Video5";
+import Test1Grade5 from "../pages/vr/tests/5-th/Test1Grade5";
+import Test2Grade5 from "../pages/vr/tests/5-th/Test2Grade5";
+import Test1Grade6 from "../pages/vr/tests/6-th/Test1Grade6";
+import Test2Grade6 from "../pages/vr/tests/6-th/Test2Grade6";
+import Test1Grade7 from "../pages/vr/tests/7-th/Test1Grade7";
+import Test2Grade7 from "../pages/vr/tests/7-th/Test2Grade7";
+import Test1Grade8 from "../pages/vr/tests/8-th/Test1Grade8";
+import Test2Grade8 from "../pages/vr/tests/8-th/Test2Grade8";
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../../modules/profile/ProfilePage'))
@@ -23,6 +36,19 @@ const PrivateRoutes = () => {
         <Route path='dashboard' element={<DashboardWrapper />} />
         <Route path='builder' element={<BuilderPageWrapper />} />
         <Route path='menu-test' element={<MenuTestPage />} />
+        <Route path={'vr/simulation-videos/video-1'} element={<Video1/>}></Route>
+        <Route path={'vr/simulation-videos/video-2'} element={<Video2/>}></Route>
+        <Route path={'vr/simulation-videos/video-3'} element={<Video3/>}></Route>
+        <Route path={'vr/simulation-videos/video-4'} element={<Video4/>}></Route>
+        <Route path={'vr/simulation-videos/video-5'} element={<Video5/>}></Route>
+        <Route path={'tests/grade-5/test-1'} element={<Test1Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-2'} element={<Test2Grade5/>}></Route>
+        <Route path={'tests/grade-6/test-1'} element={<Test1Grade6/>}></Route>
+        <Route path={'tests/grade-6/test-2'} element={<Test2Grade6/>}></Route>
+        <Route path={'tests/grade-7/test-1'} element={<Test1Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-2'} element={<Test2Grade7/>}></Route>
+        <Route path={'tests/grade-8/test-1'} element={<Test1Grade8/>}></Route>
+        <Route path={'tests/grade-8/test-2'} element={<Test2Grade8/>}></Route>
         <Route
           path='crafted/pages/profile/*'
           element={
