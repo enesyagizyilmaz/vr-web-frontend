@@ -14,9 +14,8 @@ const Footer = () => {
           {new Date().getFullYear().toString()}&copy;
         </span>
         <a
-          href='https://keenthemes.com/'
           target='_blank'
-          className='text-gray-800 text-hover-primary'
+          className='text-gray-800 '
         >
           Simulating Scientific Experiments Using VR
         </a>

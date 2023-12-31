@@ -9,6 +9,17 @@ export function MenuInner() {
 
       <MenuInnerWithSub title='VR' to='/apps' menuPlacement='bottom-start' menuTrigger='click'>
         <MenuInnerWithSub
+            title='About'
+            to=''
+            icon='message-text-2'
+            hasArrow={true}
+            menuPlacement='right-start'
+            menuTrigger={`{default:'click', lg: 'hover'}`}
+        >
+          <MenuItem to='vr/what-is-vr' title='What is VR?' hasBullet={true} />
+          <MenuItem to='vr/our-platform' title='Our Platform' hasBullet={true} />
+        </MenuInnerWithSub>
+        <MenuInnerWithSub
           title='Simulation Videos'
           to=''
           icon='message-text-2'
@@ -26,7 +37,7 @@ export function MenuInner() {
 
       <MenuInnerWithSub
           title='TESTS'
-          to='/crafted'
+          to=''
           menuPlacement='bottom-start'
           menuTrigger='click'
       >

@@ -2,7 +2,7 @@ import React, {lazy, FC, Suspense} from 'react'
 import {Route, Routes, Navigate} from 'react-router-dom'
 import {MasterLayout} from '../MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
-import {DashboardWrapper} from '../../pages/dashboard/DashboardWrapper'
+import {DashboardWrapper} from '../pages/DashboardWrapper'
 import {MenuTestPage} from '../../pages/MenuTestPage'
 import {getCSSVariableValue} from '../../../_metronic/assets/ts/_utils'
 import {WithChildren} from '../../../_metronic/helpers'
@@ -20,6 +20,8 @@ import Test1Grade7 from "../pages/vr/tests/7-th/Test1Grade7";
 import Test2Grade7 from "../pages/vr/tests/7-th/Test2Grade7";
 import Test1Grade8 from "../pages/vr/tests/8-th/Test1Grade8";
 import Test2Grade8 from "../pages/vr/tests/8-th/Test2Grade8";
+import WhatIsVR from "../pages/about/WhatIsVR";
+import OurPlatform from "../pages/about/OurPlatform";
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../../modules/profile/ProfilePage'))
@@ -41,6 +43,8 @@ const PrivateRoutes = () => {
         <Route path={'vr/simulation-videos/video-3'} element={<Video3/>}></Route>
         <Route path={'vr/simulation-videos/video-4'} element={<Video4/>}></Route>
         <Route path={'vr/simulation-videos/video-5'} element={<Video5/>}></Route>
+        <Route path={'vr/what-is-vr'} element={<WhatIsVR/>}></Route>
+        <Route path={'vr/our-platform'} element={<OurPlatform/>}></Route>
         <Route path={'tests/grade-5/test-1'} element={<Test1Grade5/>}></Route>
         <Route path={'tests/grade-5/test-2'} element={<Test2Grade5/>}></Route>
         <Route path={'tests/grade-6/test-1'} element={<Test1Grade6/>}></Route>

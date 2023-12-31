@@ -1,7 +1,4 @@
-/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
-import {useIntl} from 'react-intl'
-import {KTIcon} from '../../../../_metronic/helpers'
 import {SidebarMenuItemWithSub} from '../../../../_metronic/layout/components/sidebar/sidebar-menu/SidebarMenuItemWithSub'
 import {SidebarMenuItem} from '../../../../_metronic/layout/components/sidebar/sidebar-menu/SidebarMenuItem'
 
@@ -22,6 +19,15 @@ const SidebarMenuMain = () => {
             </div>
         </div>
 
+        <SidebarMenuItemWithSub
+            to='/apps/chat'
+            title='About'
+            fontIcon='bi-chat-left'
+            icon='message-text-2'
+        >
+            <SidebarMenuItem to='vr/what-is-vr' title='What is VR?' hasBullet={true} />
+            <SidebarMenuItem to='vr/our-platform' title='Our Platform' hasBullet={true} />
+        </SidebarMenuItemWithSub>
         <SidebarMenuItemWithSub
             to='/apps/chat'
             title='Simulation Videos'
