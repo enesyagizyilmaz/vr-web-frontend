@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import {useIntl} from 'react-intl'
-import {KTIcon} from '../../../../helpers'
-import {SidebarMenuItemWithSub} from './SidebarMenuItemWithSub'
-import {SidebarMenuItem} from './SidebarMenuItem'
+import {KTIcon} from '../../../../_metronic/helpers'
+import {SidebarMenuItemWithSub} from '../../../../_metronic/layout/components/sidebar/sidebar-menu/SidebarMenuItemWithSub'
+import {SidebarMenuItem} from '../../../../_metronic/layout/components/sidebar/sidebar-menu/SidebarMenuItem'
 
 const SidebarMenuMain = () => {
 

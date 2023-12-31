@@ -1,6 +1,6 @@
 import React, {lazy, FC, Suspense} from 'react'
 import {Route, Routes, Navigate} from 'react-router-dom'
-import {MasterLayout} from '../../../_metronic/layout/MasterLayout'
+import {MasterLayout} from '../MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
 import {DashboardWrapper} from '../../pages/dashboard/DashboardWrapper'
 import {MenuTestPage} from '../../pages/MenuTestPage'

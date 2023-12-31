@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import {useEffect, useRef} from 'react'
 import {ILayout, useLayout} from '../../core'
 import {SidebarMenu} from './sidebar-menu/SidebarMenu'
-import {SidebarFooter} from './SidebarFooter'
+import {SidebarFooter} from '../../../../app/vr-web-frontend/components/sidebar/SidebarFooter'
 import {SidebarLogo} from './SidebarLogo'
 
 const Sidebar = () => {

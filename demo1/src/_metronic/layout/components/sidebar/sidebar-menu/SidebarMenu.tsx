@@ -1,4 +1,4 @@
-import {SidebarMenuMain} from './SidebarMenuMain'
+import {SidebarMenuMain} from '../../../../../app/vr-web-frontend/components/sidebar/SidebarMenuMain'
 
 const SidebarMenu = () => {
   return (

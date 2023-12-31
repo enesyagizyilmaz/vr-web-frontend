@@ -1,5 +1,5 @@
 export * from './ToolbarAccounting'
-export * from './ToolbarClassic'
+export * from '../../../../../app/vr-web-frontend/components/ToolbarClassic'
 export * from './ToolbarExtended'
 export * from './ToolbarReports'
 export * from './ToolbarSaas'

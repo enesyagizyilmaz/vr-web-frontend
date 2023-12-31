@@ -1,1 +1,1 @@
-export * from './MenuInner'
+export * from '../../../../../app/vr-web-frontend/components/header/MenuInner'

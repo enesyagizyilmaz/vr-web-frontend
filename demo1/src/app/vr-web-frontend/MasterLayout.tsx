@@ -1,15 +1,14 @@
 import {useEffect} from 'react'
 import {Outlet, useLocation} from 'react-router-dom'
-import {HeaderWrapper} from './components/header'
-import {RightToolbar} from '../partials/layout/RightToolbar'
-import {ScrollTop} from './components/scroll-top'
-import {Content} from './components/content'
-import {FooterWrapper} from './components/footer'
-import {Sidebar} from './components/sidebar'
-import {ActivityDrawer, DrawerMessenger, InviteUsers, UpgradePlan} from '../partials'
-import {PageDataProvider} from './core'
-import {reInitMenu} from '../helpers'
-import {ToolbarWrapper} from './components/toolbar'
+import {HeaderWrapper} from '../../_metronic/layout/components/header'
+import {ScrollTop} from '../../_metronic/layout/components/scroll-top'
+import {Content} from '../../_metronic/layout/components/content'
+import {FooterWrapper} from '../../_metronic/layout/components/footer'
+import {Sidebar} from '../../_metronic/layout/components/sidebar'
+import {ActivityDrawer, DrawerMessenger, InviteUsers, UpgradePlan} from '../../_metronic/partials'
+import {PageDataProvider} from '../../_metronic/layout/core'
+import {reInitMenu} from '../../_metronic/helpers'
+import {ToolbarWrapper} from '../../_metronic/layout/components/toolbar'
 
 const MasterLayout = () => {
   const location = useLocation()
@@ -39,7 +38,7 @@ const MasterLayout = () => {
 
       {/* begin:: Drawers */}
       <ActivityDrawer />
-      <RightToolbar />
+
       <DrawerMessenger />
       {/* end:: Drawers */}
 

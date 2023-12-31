@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import {useLayout} from '../../core'
-import {Footer} from './Footer'
+import {Footer} from '../../../../app/vr-web-frontend/components/footer/Footer'
 
 const FooterWrapper = () => {
   const {config} = useLayout()
