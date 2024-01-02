@@ -77,15 +77,6 @@ const SidebarMenuMain = () => {
             <SidebarMenuItem to='tests/grade-7/test-2' title='Test 2' hasBullet={true} />
         </SidebarMenuItemWithSub>
 
-        <SidebarMenuItemWithSub
-            to='/apps/chat'
-            title='8. Grade'
-            fontIcon='bi-chat-left'
-            icon='message-text-2'
-        >
-            <SidebarMenuItem to='tests/grade-8/test-1' title='Test 1' hasBullet={true} />
-            <SidebarMenuItem to='tests/grade-8/test-2' title='Test 2' hasBullet={true} />
-        </SidebarMenuItemWithSub>
 
     </>
   )

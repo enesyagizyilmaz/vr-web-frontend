@@ -18,8 +18,6 @@ import Test1Grade6 from "../pages/vr/tests/6-th/Test1Grade6";
 import Test2Grade6 from "../pages/vr/tests/6-th/Test2Grade6";
 import Test1Grade7 from "../pages/vr/tests/7-th/Test1Grade7";
 import Test2Grade7 from "../pages/vr/tests/7-th/Test2Grade7";
-import Test1Grade8 from "../pages/vr/tests/8-th/Test1Grade8";
-import Test2Grade8 from "../pages/vr/tests/8-th/Test2Grade8";
 import WhatIsVR from "../pages/about/WhatIsVR";
 import OurPlatform from "../pages/about/OurPlatform";
 
@@ -51,8 +49,6 @@ const PrivateRoutes = () => {
         <Route path={'tests/grade-6/test-2'} element={<Test2Grade6/>}></Route>
         <Route path={'tests/grade-7/test-1'} element={<Test1Grade7/>}></Route>
         <Route path={'tests/grade-7/test-2'} element={<Test2Grade7/>}></Route>
-        <Route path={'tests/grade-8/test-1'} element={<Test1Grade8/>}></Route>
-        <Route path={'tests/grade-8/test-2'} element={<Test2Grade8/>}></Route>
         <Route
           path='crafted/pages/profile/*'
           element={

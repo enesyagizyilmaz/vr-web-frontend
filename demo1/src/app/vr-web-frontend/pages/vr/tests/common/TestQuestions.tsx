@@ -12,7 +12,7 @@ interface TestQuestionsProps {
     calculateScore: () => void;
 }
 
-const TestQuestions: React.FC<TestQuestionsProps> = ({ questions, selectedOptions, handleOptionChange, calculateScore }) => {
+const TestHandler: React.FC<TestQuestionsProps> = ({ questions, selectedOptions, handleOptionChange, calculateScore }) => {
     return (
         <div className="card shadow-sm">
             <div className="card-body">
@@ -56,4 +56,4 @@ const TestQuestions: React.FC<TestQuestionsProps> = ({ questions, selectedOption
     );
 };
 
-export default TestQuestions;
+export default TestHandler;

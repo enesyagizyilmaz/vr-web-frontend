@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import Welcome from "../common/Welcome";
 import Result from "../common/Result";
 import TestQuestions from "../common/TestQuestions";
+import TestHandler from "../common/TestQuestions";
 
 const Test1Grade5 = () =>
 {
@@ -98,7 +99,7 @@ const Test1Grade5 = () =>
 
             {finishTest && <Result testName={'Test 1 | Grade 5'} wrongAnswers={wrongAnswers} />}
 
-            {!finishTest && showQuestions && <TestQuestions questions={questions} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+            {!finishTest && showQuestions && <TestHandler questions={questions} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
         </>
     )
 }
