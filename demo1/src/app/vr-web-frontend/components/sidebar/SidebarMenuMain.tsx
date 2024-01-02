@@ -50,8 +50,8 @@ const SidebarMenuMain = () => {
         <SidebarMenuItemWithSub
             to='/apps/chat'
             title='5. Grade'
-            fontIcon='bi-chat-left'
-            icon='message-text-2'
+            icon='element-7'
+            fontIcon='bi-layers'
         >
             <SidebarMenuItem to='tests/grade-5/test-1' title='Test 1' hasBullet={true} />
             <SidebarMenuItem to='tests/grade-5/test-2' title='Test 2' hasBullet={true} />
@@ -60,8 +60,8 @@ const SidebarMenuMain = () => {
         <SidebarMenuItemWithSub
             to='/apps/chat'
             title='6. Grade'
-            fontIcon='bi-chat-left'
-            icon='message-text-2'
+            icon='element-7'
+            fontIcon='bi-layers'
         >
             <SidebarMenuItem to='tests/grade-6/test-1' title='Test 1' hasBullet={true} />
             <SidebarMenuItem to='tests/grade-6/test-2' title='Test 2' hasBullet={true} />
@@ -70,8 +70,8 @@ const SidebarMenuMain = () => {
         <SidebarMenuItemWithSub
             to='/apps/chat'
             title='7. Grade'
-            fontIcon='bi-chat-left'
-            icon='message-text-2'
+            icon='element-7'
+            fontIcon='bi-layers'
         >
             <SidebarMenuItem to='tests/grade-7/test-1' title='Test 1' hasBullet={true} />
             <SidebarMenuItem to='tests/grade-7/test-2' title='Test 2' hasBullet={true} />

@@ -5,8 +5,8 @@ import {Languages} from '../../../../_metronic/partials/layout/header-menus/Lang
 import {toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {AuthContext} from "../../context/AuthContext";
 
-const HeaderUserMenu: FC = () => {
-  const {currentUser, logout} = useAuth()
+const HeaderUserMenu: FC = () =>
+{
   const authState = useContext(AuthContext);
 
   const onClickLogout = () =>

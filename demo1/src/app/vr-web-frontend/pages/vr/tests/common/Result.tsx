@@ -32,7 +32,6 @@ const Result: React.FC<ResultProps> = ({ testName, wrongAnswers, questions, scor
                             <td>{question.text}</td>
                             <td>
                                 <span className="badge badge-light-success">{question.options.find((option) => option.isCorrect)?.text || 'N/A'}</span>
-
                             </td>
                         </tr>
                     ))}
@@ -51,7 +50,7 @@ const Result: React.FC<ResultProps> = ({ testName, wrongAnswers, questions, scor
                         <table className={"table table-rounded table-striped border gy-7 gs-7"}>
                             <thead>
                             <tr className={"fw-semibold fs-6 text-gray-800 border-bottom border-gray-200"}>
-                                <th><h3>Question Number</h3></th>
+                                <th><h3>#</h3></th>
                                 <th><h3>Question</h3></th>
                             </tr>
                             </thead>
