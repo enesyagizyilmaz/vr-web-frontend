@@ -26,13 +26,14 @@ const TestHandler: React.FC<TestQuestionsProps> = ({ questions, selectedOptions,
                             <div key={index}>
                                 <h2>
                                     {question.index}-) {question.text}
-                                </h2>
+                                </h2><br/>
                                 <ul style={{ listStyleType: 'none', padding: 0 }}>
                                     {question.options.map((option) => (
                                         <li key={option.id}>
                                             <label style={{ display: 'flex', alignItems: 'center' }}>
                                                 <input
                                                     type="radio"
+                                                    className={"form-check-input"}
                                                     name={`answer-${index}`}
                                                     value={option.id}
                                                     checked={option.id === selectedOptions[index]}
@@ -40,7 +41,7 @@ const TestHandler: React.FC<TestQuestionsProps> = ({ questions, selectedOptions,
                                                     style={{ marginRight: '8px' }}
                                                 />
                                                 {option.text}
-                                            </label>
+                                            </label><br/>
                                         </li>
                                     ))}
                                 </ul>

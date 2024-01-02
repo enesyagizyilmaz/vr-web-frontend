@@ -9,11 +9,10 @@ const Welcome: React.FC<TestIntroProps> = ({ handleShowQuestion, testTitle}) => 
     return (
         <div className="card shadow-sm">
             <div className="card-header">
-                <h3 className="card-title">{testTitle}</h3>
-                <div className="card-toolbar"></div>
+                <h1 className="card-title">{testTitle}</h1>
             </div>
             <div className="card-body">
-                There are 5 questions in this test. If you are ready, press the button to take the test
+                <h3>There are 5 questions in this test. If you are ready, click the button to take the test</h3>
             </div>
             <div className="card-footer">
                 <button type="button" className="btn btn-info" onClick={handleShowQuestion}>

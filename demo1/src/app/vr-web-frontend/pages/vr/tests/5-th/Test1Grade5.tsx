@@ -1,13 +1,11 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
 import Welcome from "../common/Welcome";
 import Result from "../common/Result";
-import TestQuestions from "../common/TestQuestions";
 import TestHandler from "../common/TestQuestions";
 
 const Test1Grade5 = () =>
 {
-    const [score, setScore] = useState(0);
+    const [score, setScore] = useState<any>(0);
     const [selectedOptions, setSelectedOptions] = useState<any>([null, null]);
     const [showQuestions, setShowQuestions] = useState(false);
     const [finishTest, setFinishTest] = useState(false);
@@ -97,7 +95,7 @@ const Test1Grade5 = () =>
         <>
             {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'Test 1 | Grade 5'}/>}
 
-            {finishTest && <Result testName={'Test 1 | Grade 5'} wrongAnswers={wrongAnswers} />}
+            {finishTest && <Result testName={'Test 1 | Grade 5'} wrongAnswers={wrongAnswers} questions={questions} score={score}/>}
 
             {!finishTest && showQuestions && <TestHandler questions={questions} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
         </>
