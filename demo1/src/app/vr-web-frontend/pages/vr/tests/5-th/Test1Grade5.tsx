@@ -89,7 +89,7 @@ const Test1Grade5 = () =>
                 { id: "Batıdan doğuya", text: "Batıdan doğuya", isCorrect: false },
             ],
         },
-    ];
+    ];//enes
 
     return(
         <>
