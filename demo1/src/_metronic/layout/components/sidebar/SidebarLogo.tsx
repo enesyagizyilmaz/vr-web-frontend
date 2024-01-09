@@ -60,8 +60,8 @@ const SidebarLogo = (props: PropsType) => {
           <>
             <img
               alt='Logo'
-              src={toAbsoluteUrl('/media/logos/default.svg')}
-              className='h-25px app-sidebar-logo-default theme-light-show'
+              src={toAbsoluteUrl('/media/logos/vr4.jpg')}
+              className='h-50px app-sidebar-logo-default theme-light-show'
             />
             <img
               alt='Logo'

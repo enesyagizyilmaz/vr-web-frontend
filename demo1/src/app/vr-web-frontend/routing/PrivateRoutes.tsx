@@ -20,7 +20,7 @@ import WhatIsVR from "../pages/about/WhatIsVR";
 import OurPlatform from "../pages/about/OurPlatform";
 
 const PrivateRoutes = () => {
-  const ProfilePage = lazy(() => import('../../modules/profile/ProfilePage'))
+  const ProfilePage = lazy(() => import('../components/header/profile/ProfilePage'))
   const AccountPage = lazy(() => import('../../modules/accounts/AccountPage'))
 
   return (

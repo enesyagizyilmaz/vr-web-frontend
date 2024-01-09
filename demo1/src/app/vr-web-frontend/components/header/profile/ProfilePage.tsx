@@ -1,5 +1,5 @@
-import {ProfileHeader} from './ProfileHeader'
-
+import React from "react";
+import {ProfileHeader} from "./ProfileHeader";
 
 const ProfilePage = () => (
   <ProfileHeader></ProfileHeader>

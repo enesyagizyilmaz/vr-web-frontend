@@ -41,6 +41,7 @@ const Login = () =>
         try
         {
             const response = await login({email,password});
+            
             if (authState.onLoginSuccess)
             {
                 authState.onLoginSuccess(response.data.user)

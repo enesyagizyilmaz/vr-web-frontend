@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, {useContext} from 'react'
-import {KTIcon, toAbsoluteUrl} from '../../../_metronic/helpers'
+import {KTIcon, toAbsoluteUrl} from '../../../../../_metronic/helpers'
 import {Link, useLocation} from 'react-router-dom'
-import {Dropdown1} from '../../../_metronic/partials'
-import {AuthContext} from "../../vr-web-frontend/context/AuthContext";
+import {Dropdown1} from '../../../../../_metronic/partials'
+import {AuthContext} from "../../../context/AuthContext";
 
 const ProfileHeader: React.FC = () => {
   const authState = useContext(AuthContext);
@@ -23,31 +23,31 @@ const ProfileHeader: React.FC = () => {
             <div className='d-flex justify-content-between align-items-start flex-wrap mb-2'>
               <div className='d-flex flex-column'>
                 <div className='d-flex align-items-center mb-2'>
-                  <a href='#' className='text-gray-800 text-hover-primary fs-2 fw-bolder me-1'>
+                  <a href='demo1/src/app/modules/profile#' className='text-gray-800 text-hover-primary fs-2 fw-bolder me-1'>
                     {authState.username}
                   </a>
-                  <a href='#'>
+                  <a href='demo1/src/app/modules/profile#'>
                     <KTIcon iconName='verify' className='fs-1 text-primary' />
                   </a>
                 </div>
 
                 <div className='d-flex flex-wrap fw-bold fs-6 mb-4 pe-2'>
                   <a
-                    href='#'
+                    href='demo1/src/app/modules/profile#'
                     className='d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2'
                   >
                     <KTIcon iconName='profile-circle' className='fs-4 me-1' />
                     Student
                   </a>
                   <a
-                    href='#'
+                    href='demo1/src/app/modules/profile#'
                     className='d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2'
                   >
                     <KTIcon iconName='geolocation' className='fs-4 me-1' />
                     Turkey, Ankara
                   </a>
                   <a
-                    href='#'
+                    href='demo1/src/app/modules/profile#'
                     className='d-flex align-items-center text-gray-400 text-hover-primary mb-2'
                   >
                     <KTIcon iconName='sms' className='fs-4 me-1' />
@@ -81,8 +81,6 @@ const ProfileHeader: React.FC = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   )
