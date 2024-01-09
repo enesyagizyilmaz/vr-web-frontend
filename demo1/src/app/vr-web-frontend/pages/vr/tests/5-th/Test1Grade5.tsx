@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Welcome from "../common/Welcome";
 import Result from "../common/Result";
 import TestHandler from "../common/TestQuestions";
+import {AuthContext} from "../../../../context/AuthContext";
+import {postScoreApi} from "../../../../api/ApiService";
 
 const Test1Grade5 = () =>
 {
-    const [score, setScore] = useState<any>(0);
+    const [score, setScore] = useState<any>(null);
     const [selectedOptions, setSelectedOptions] = useState<any>([null, null]);
     const [showQuestions, setShowQuestions] = useState(false);
     const [finishTest, setFinishTest] = useState(false);
     const [wrongAnswers, setWrongAnswers] = useState<any>([]);
+    const authState = useContext(AuthContext);
 
-    const handleOptionChange = (index, optionId) => {
+    const handleOptionChange = (index, optionId) =>
+    {
         setSelectedOptions((prevOptions) => {
             const newOptions = [...prevOptions];
             newOptions[index] = optionId;
@@ -19,7 +23,31 @@ const Test1Grade5 = () =>
         });
     };
 
-    const calculateScore = () => {
+    useEffect(() => {
+        // Component ilk yüklendiğinde skorun 0 olarak kaydedilmesini engelliyoruz
+        if (score !== null) {
+            sendScore();
+        }
+    }, [score]);
+
+    const sendScore = async () => {
+        try {
+            const userId = authState.id;
+            const data = {
+                userId: userId,
+                score: score,
+                grade: "Grade 5",
+                testNumber: "Test 1",
+            };
+            await postScoreApi(data);
+
+        } catch (error) {
+            console.error("Error sending score:", error);
+        }
+    };
+
+    const calculateScore = () =>
+    {
         const newScore = questions.reduce((acc, question, index) => {
             const selectedOption = selectedOptions[index];
             const correctOption = question.options.find((option) => option.isCorrect);
@@ -89,7 +117,7 @@ const Test1Grade5 = () =>
                 { id: "Batıdan doğuya", text: "Batıdan doğuya", isCorrect: false },
             ],
         },
-    ];//enes
+    ];
 
     return(
         <>

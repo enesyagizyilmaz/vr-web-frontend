@@ -45,7 +45,6 @@ const Login = () =>
             if (authState.onLoginSuccess)
             {
                 authState.onLoginSuccess(response.data.user)
-                console.log(response.data.user)
             }
         }
         catch(axiosError:any)
