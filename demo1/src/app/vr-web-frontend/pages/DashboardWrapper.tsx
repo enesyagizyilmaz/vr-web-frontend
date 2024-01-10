@@ -44,7 +44,7 @@ const DashboardWrapper: FC = () =>
                     <div className={`card card-xl-stretch mb-xl-8`}>
 
                         <div className='card-header border-0'>
-                            <h3 className='card-title fw-bold text-dark'>{userCount} users has registered</h3>
+                            <h3 className='card-title fw-bold text-dark'>{userCount} users has registered on our platform</h3>
                         </div>
 
                         <div className='card-body pt-2'>

@@ -32,3 +32,8 @@ export const postScoreApi = (credentials) =>
     return apiClient.post("/api/v1/add-score",credentials);
 }
 
+export const getScoreByIdApi = (id) =>
+{
+    return apiClient.get(`/api/v1/user/${id}`);
+};
+

@@ -23,9 +23,10 @@ const Test1Grade5 = () =>
         });
     };
 
-    useEffect(() => {
-        // Component ilk yüklendiğinde skorun 0 olarak kaydedilmesini engelliyoruz
-        if (score !== null) {
+    useEffect(() =>
+    {
+        if (score !== null)
+        {
             sendScore();
         }
     }, [score]);
