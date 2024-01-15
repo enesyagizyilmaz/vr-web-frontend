@@ -30,7 +30,7 @@ export const getUsersWithEmailAndUsernameApi = () =>
 export const postScoreApi = (credentials) =>
 {
     return apiClient.post("/api/v1/add-score",credentials);
-}
+};
 
 export const getScoreByIdApi = (id) =>
 {

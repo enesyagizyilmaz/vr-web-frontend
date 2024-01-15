@@ -95,7 +95,7 @@ const ProfileHeader: React.FC = () => {
             <tr className={"fw-semibold fs-6 text-gray-800 border-bottom border-gray-200"}>
               <th><h3>Grade</h3></th>
               <th><h3>Test Number</h3></th>
-              <th><h3>Score</h3></th>
+              <th><h3>Score (Out of 100)</h3></th>
             </tr>
             </thead>
             <tbody>
@@ -103,7 +103,7 @@ const ProfileHeader: React.FC = () => {
                 <tr key={index}>
                   <td>{score.grade}</td>
                   <td>{score.testNumber}</td>
-                  <td>{score.score}</td>
+                  <td>{(score.score)*20}</td>
                 </tr>
             ))}
             </tbody>
