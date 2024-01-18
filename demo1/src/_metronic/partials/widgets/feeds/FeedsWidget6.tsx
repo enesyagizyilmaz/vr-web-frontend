@@ -18,16 +18,16 @@ const FeedsWidget6: React.FC<Props> = ({className}) => {
           <div className='d-flex align-items-center flex-grow-1'>
             {/* begin::Avatar */}
             <div className='symbol symbol-45px me-5'>
-              <img src={toAbsoluteUrl('/media/avatars/300-13.jpg')} alt='' />
+              <img src={toAbsoluteUrl('/media/logos/vr6.png')} alt='' />
             </div>
             {/* end::Avatar */}
 
             {/* begin::Info */}
             <div className='d-flex flex-column'>
               <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
-                Mat Dillon
+                VRevolution
               </a>
-              <span className='text-gray-400 fw-semibold'>Last month</span>
+              <span className='text-gray-400 fw-semibold'>Where Science meets Virtual Reality</span>
             </div>
             {/* end::Info */}
           </div>
