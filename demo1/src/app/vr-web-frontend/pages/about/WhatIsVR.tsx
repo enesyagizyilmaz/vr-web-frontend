@@ -1,8 +1,8 @@
 import React from "react";
 import {toAbsoluteUrl} from "../../../../_metronic/helpers";
 
-const WhatIsVR = () => {
-
+const WhatIsVR = () =>
+{
     return(
         <>
             <h1>What is VR?</h1><br/>
@@ -35,8 +35,6 @@ const WhatIsVR = () => {
                     </div>
                 </div>
 
-
-                {/* begin::Col */}
                 <div className='col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10'>
                     <div
                         className={`card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-md-50 mb-5 mb-xl-10`}
@@ -65,9 +63,7 @@ const WhatIsVR = () => {
                         </div>
                     </div>
                 </div>
-                {/* end::Col */}
 
-                {/* begin::Col */}
                 <div className='col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10'>
                     <div
                         className={`card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end h-md-50 mb-5 mb-xl-10`}
@@ -99,6 +95,6 @@ const WhatIsVR = () => {
             </div>
         </>
     )
-}
+};
 
 export default WhatIsVR;

@@ -25,42 +25,24 @@ const AuthLayout = () => {
           </div>
         </div>
       </div>
-
       <div
         className='d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2'
         style={{backgroundImage: `url(${toAbsoluteUrl('/media/misc/auth-bg.png')})`}}
       >
-        {/* begin::Content */}
         <div className='d-flex flex-column flex-center py-15 px-5 px-md-15 w-100'>
-          {/* begin::Logo */}
-          <Link to='/' className='mb-12'>
-            <img alt='Logo' src={toAbsoluteUrl('/media/logos/vr2.png')} className='h-75px' />
-          </Link>
-          {/* end::Logo */}
-
-          {/* begin::Image */}
           <img
             className='mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20'
-            src={toAbsoluteUrl('/media/misc/auth4.png')}
+            src={toAbsoluteUrl('/media/logos/vr6.png')}
             alt=''
           />
-          {/* end::Image */}
-
-          {/* begin::Title */}
           <h1 className='text-white fs-2qx fw-bolder text-center mb-7'>
-            Simulating Scientific Experiments Using Virtual Reality
+            VRevolution
           </h1>
-          {/* end::Title */}
-
-          {/* begin::Text */}
           <div className='text-white fs-base text-center'>
-            VR Enhanced Learning Platform
+            Where Science meets Virtual Reality
           </div>
-          {/* end::Text */}
         </div>
-        {/* end::Content */}
       </div>
-      {/* end::Aside */}
     </div>
   )
 }
