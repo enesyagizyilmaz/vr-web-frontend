@@ -4,7 +4,6 @@ import {loadAuthState, storeAuthState} from "./Storage";
 interface AuthContextType {
     id: number;
     email: string | undefined;
-
     username: string | undefined;
     onLoginSuccess?: (data: any) => void;
     onLogoutSuccess?: () => void;

@@ -17,7 +17,7 @@ const Footer = () => {
           target='_blank'
           className='text-gray-800 '
         >
-          Simulating Scientific Experiments Using VR
+          VRevolution
         </a>
       </div>
     </>

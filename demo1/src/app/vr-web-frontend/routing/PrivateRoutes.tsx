@@ -18,6 +18,7 @@ import Test1Grade7 from "../pages/vr/tests/7-th/Test1Grade7";
 import Test2Grade7 from "../pages/vr/tests/7-th/Test2Grade7";
 import WhatIsVR from "../pages/about/WhatIsVR";
 import OurPlatform from "../pages/about/OurPlatform";
+import AccountSettings from "../components/header/profile/AccountSettings";
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../components/header/profile/ProfilePage'))
@@ -45,6 +46,8 @@ const PrivateRoutes = () => {
         <Route path={'tests/grade-6/test-2'} element={<Test2Grade6/>}></Route>
         <Route path={'tests/grade-7/test-1'} element={<Test1Grade7/>}></Route>
         <Route path={'tests/grade-7/test-2'} element={<Test2Grade7/>}></Route>
+
+        <Route path={'account/settings'} element={<AccountSettings/>}></Route>
 
         <Route
           path='crafted/pages/profile/*'
