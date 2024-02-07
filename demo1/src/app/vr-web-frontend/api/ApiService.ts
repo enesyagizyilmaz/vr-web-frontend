@@ -7,7 +7,6 @@ const apiClient = axios.create
     }
 );
 
-//
 
 export const signUpApi = (body) =>
 {
