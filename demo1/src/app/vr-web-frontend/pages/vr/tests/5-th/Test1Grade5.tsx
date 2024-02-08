@@ -49,7 +49,8 @@ const Test1Grade5 = () =>
 
     const calculateScore = () =>
     {
-        const newScore = questions.reduce((acc, question, index) => {
+        const newScore = questions.reduce((acc, question, index) =>
+        {
             const selectedOption = selectedOptions[index];
             const correctOption = question.options.find((option) => option.isCorrect);
             if (selectedOption !== correctOption?.id)
