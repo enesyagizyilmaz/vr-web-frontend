@@ -14,7 +14,7 @@ const DashboardWrapper: FC = () =>
 
   useEffect(() =>
   {
-      getUserCount();
+      getUserCount();//
       getUsernameAndEmails();
   }, []);
   const getUserCount = () =>
