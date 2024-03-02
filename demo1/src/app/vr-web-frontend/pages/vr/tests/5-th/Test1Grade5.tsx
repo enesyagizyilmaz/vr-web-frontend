@@ -3,7 +3,7 @@ import Welcome from "../common/Welcome";
 import Result from "../common/Result";
 import TestHandler from "../common/TestQuestions";
 import {AuthContext} from "../../../../context/AuthContext";
-import {postScoreApi} from "../../../../api/ApiService";
+import {getTest1Grade5, postScoreApi} from "../../../../api/ApiService";
 
 const Test1Grade5 = () =>
 {
@@ -12,7 +12,25 @@ const Test1Grade5 = () =>
     const [showQuestions, setShowQuestions] = useState(false);
     const [finishTest, setFinishTest] = useState(false);
     const [wrongAnswers, setWrongAnswers] = useState<any>([]);
+    const [question, setQuestion] = useState<any>([]);
     const authState = useContext(AuthContext);
+
+    useEffect(() =>
+    {
+        const fetchQuestions = async () =>
+        {
+            try
+            {
+                const response = await getTest1Grade5();
+                setQuestion(response.data);
+            }
+            catch (error)
+            {
+                console.error("Error fetching questions:", error);
+            }
+        };
+        fetchQuestions();
+    }, []);
 
     const handleOptionChange = (index, optionId) =>
     {
@@ -49,15 +67,15 @@ const Test1Grade5 = () =>
 
     const calculateScore = () =>
     {
-        const newScore = questions.reduce((acc, question, index) =>
+        const newScore = question.reduce((acc, question, index) =>
         {
             const selectedOption = selectedOptions[index];
             const correctOption = question.options.find((option) => option.isCorrect);
-            if (selectedOption !== correctOption?.id)
+            if (selectedOption !== correctOption?.option_id)
             {
                 setWrongAnswers((prevWrongAnswers) => [...prevWrongAnswers, { question: question.text, selectedOption }]);
             }
-            return acc + (selectedOption === correctOption?.id ? 1 : 0);
+            return acc + (selectedOption === correctOption?.option_id ? 1 : 0);
         }, 0);
         setScore(newScore);
         setFinishTest(true);
@@ -68,66 +86,13 @@ const Test1Grade5 = () =>
       setShowQuestions(true);
     }
 
-    const questions = [
-        {
-            index: 1,
-            text: "Güneş'in dönüş yönü nedir?",
-            options: [
-                { id: "Saat yönünün tersine", text: "Saat yönünün tersine", isCorrect: true },
-                { id: " Saat yönünde", text: " Saat yönünde", isCorrect: false },
-                { id: "Doğudan batıya", text: "Doğudan batıya", isCorrect: false },
-                { id: "Batıdan doğuya", text: "Batıdan doğuya", isCorrect: false },
-            ],
-        },
-        {
-            index: 2,
-            text: "Dünya'nın kendi ekseni etrafındaki dönüş hareketi nasıl gerçekleşir?",
-            options: [
-                { id: "Saat yönünün tersine", text: "Saat yönünün tersine", isCorrect: true },
-                { id: "Saat yönünde", text: "Saat yönünde", isCorrect: false },
-                { id: "Doğudan batıya", text: "Doğudan batıya", isCorrect: false },
-                { id: "Batıdan doğuya", text: "Batıdan doğuya", isCorrect: false },
-            ],
-        },
-        {
-            index: 3,
-            text: "Dünya'nın Güneş etrafında dolanma süresi kaç gündür?",
-            options: [
-                { id: " 24 saat", text: " 24 saat", isCorrect: false },
-                { id: " 365 gün 6 saat", text: " 365 gün 6 saat", isCorrect: true },
-                { id: "30 gün", text: "30 gün", isCorrect: false },
-                { id: "12 saat", text: "12 saat", isCorrect: false },
-            ],
-        },
-        {
-            index: 4,
-            text: " Ay'ın kendi ekseni etrafındaki dönüş hareketi hangi yönde gerçekleşir?",
-            options: [
-                { id: "Saat yönünün tersine", text: "Saat yönünün tersine", isCorrect: true },
-                { id: "Saat yönünde", text: "Saat yönünde", isCorrect: false },
-                { id: "Doğudan batıya", text: "Doğudan batıya", isCorrect: false },
-                { id: "Batıdan doğuya", text: "Batıdan doğuya", isCorrect: false },
-            ],
-        },
-        {
-            index: 5,
-            text: "Ay, Dünya etrafında dolanma hareketini hangi yönde yapar?",
-            options: [
-                { id:"Saat yönünün tersine", text: "Saat yönünün tersine", isCorrect: true },
-                { id: "Saat yönünde", text: "Saat yönünde", isCorrect: false },
-                { id: "Doğudan batıya", text: "Doğudan batıya", isCorrect: false },
-                { id: "Batıdan doğuya", text: "Batıdan doğuya", isCorrect: false },
-            ],
-        },
-    ];
-
     return(
         <>
             {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'Test 1 | Grade 5'}/>}
 
-            {finishTest && <Result testName={'Test 1 | Grade 5'} wrongAnswers={wrongAnswers} questions={questions} score={score}/>}
+            {finishTest && <Result testName={'Test 1 | Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
 
-            {!finishTest && showQuestions && <TestHandler questions={questions} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+            {!finishTest && showQuestions && <TestHandler questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
         </>
     )
 }

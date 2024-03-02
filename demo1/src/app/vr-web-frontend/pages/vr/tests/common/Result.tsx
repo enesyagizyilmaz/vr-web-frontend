@@ -9,7 +9,7 @@ interface ResultProps
     questions: {
         index: number;
         text: string;
-        options: { id: string; text: string }[];
+        options: { option_id: string; text: string }[];
     }[];
 }
 
