@@ -7,49 +7,64 @@ const apiClient = axios.create
     }
 );
 
+export const getUnit1Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit1grade5achievement");
+};
+
+export const getUnit2Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit2grade5achievement");
+};
+
+export const getUnit3Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit3grade5achievement");
+};
+
 export const getTest1Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test1grade5")
+    return apiClient.get("/api/questions/test1grade5");
 };
 
 export const getTest2Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test2grade5")
+    return apiClient.get("/api/questions/test2grade5");
 };
 
 export const getTest3Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test3grade5")
+    return apiClient.get("/api/questions/test3grade5");
 };
 
 export const getTest4Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test4grade5")
+    return apiClient.get("/api/questions/test4grade5");
 };
 
 export const getTest5Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test5grade5")
+    return apiClient.get("/api/questions/test5grade5");
 };
 
 export const getTest6Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test6grade5")
+    return apiClient.get("/api/questions/test6grade5");
 };
 
 export const getTest7Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test7grade5")
+    return apiClient.get("/api/questions/test7grade5");
 };
 
 export const getTest8Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test8grade5")
+    return apiClient.get("/api/questions/test8grade5");
 };
 
 export const getTest9Grade5 = () =>
 {
-    return apiClient.get("/api/questions/test9grade5")
+    return apiClient.get("/api/questions/test9grade5");
 };
 
 export const signUpApi = (body) =>

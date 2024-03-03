@@ -3,7 +3,9 @@ import Welcome from "../common/Welcome";
 import Result from "../common/Result";
 import TestHandler from "../common/TestQuestions";
 import {AuthContext} from "../../../../context/AuthContext";
-import {getTest9Grade5, postScoreApi} from "../../../../api/ApiService";
+import {getTest9Grade5, getUnit3Grade5Achievements, postScoreApi} from "../../../../api/ApiService";
+import {AchievementData} from "../common/AchievementData";
+import {AchievementTable} from "../common/AchievementTable";
 
 const Test9Grade5 = () =>
 {
@@ -14,6 +16,7 @@ const Test9Grade5 = () =>
     const [wrongAnswers, setWrongAnswers] = useState<any>([]);
     const [question, setQuestion] = useState<any>([]);
     const authState = useContext(AuthContext);
+    const [achievementData, setAchievementData] = useState<AchievementData | null>(null);
 
     useEffect(() =>
     {
@@ -30,6 +33,23 @@ const Test9Grade5 = () =>
             }
         };
         fetchQuestions();
+    }, []);
+
+    useEffect(() =>
+    {
+        const fetchAchievements = async () =>
+        {
+            try
+            {
+                const response = await getUnit3Grade5Achievements();
+                setAchievementData(response.data);
+            }
+            catch (error)
+            {
+                console.error("Error fetching achievements:", error);
+            }
+        };
+        fetchAchievements();
     }, []);
 
     const handleOptionChange = (index, optionId) =>
@@ -93,6 +113,31 @@ const Test9Grade5 = () =>
             {finishTest && <Result testName={'UNIT 3: Measurement of Force and Friction: Test 9 - Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
 
             {!finishTest && showQuestions && <TestHandler title={'UNIT 3: Measurement of Force and Friction: Test 9 - Grade 5'} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+
+            <br/>
+
+            {!showQuestions &&
+                <AchievementTable
+                    title={"Achievements: UNIT 3: Measurement of Force and Friction"}
+                    topic1={achievementData?.topic1}
+                    topic1Achievement1={achievementData?.topic1Achievement1}
+                    topic1Achievement2={achievementData?.topic1Achievement2}
+                    topic1Achievement3={achievementData?.topic1Achievement3}
+                    topic2={achievementData?.topic2}
+                    topic2Achievement1={achievementData?.topic2Achievement1}
+                    topic2Achievement2={achievementData?.topic1Achievement2}
+                    topic2Achievement3={achievementData?.topic2Achievement3}
+                    topic3={achievementData?.topic3}
+                    topic3Achievement1={achievementData?.topic3Achievement1}
+                    topic3Achievement2={achievementData?.topic3Achievement2}
+                    topic3Achievement3={achievementData?.topic3Achievement2}
+                    topic4={achievementData?.topic4}
+                    topic4Achievement1={achievementData?.topic4Achievement1}
+                    topic4Achievement2={achievementData?.topic4Achievement2}
+                    topic4Achievement3={achievementData?.topic4Achievement3}
+                    className={'mb-5 mb-xl-8'}
+                />
+            }
         </>
     )
 }
