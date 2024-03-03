@@ -3,7 +3,7 @@ import {signUpApi} from "../api/ApiService";
 import Input from "../components/Input";
 import {Button} from "../components/Button";
 import {toAbsoluteUrl} from "../../../_metronic/helpers";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const SignUp = () => {
     const [username, setUsername] = useState<string | undefined>();
@@ -13,7 +13,8 @@ const SignUp = () => {
     const [apiProgress, setApiProgress] = useState(false);
     const [successMessage, setSuccessMessage] = useState<string | undefined>();
     const [errors, setErrors] = useState<any>({});
-    const [generalErrors, setGeneralErrors] = useState<any>()
+    const [generalErrors, setGeneralErrors] = useState<any>();
+    const navigate = useNavigate();
 
     useEffect(() => {
         setErrors(function(lastErrors){
@@ -61,6 +62,10 @@ const SignUp = () => {
         {
             const response = await signUpApi({username, email, password})
             setSuccessMessage(response.data.message);
+            setTimeout(() => {
+                navigate("login"); // Başka bir sayfaya yönlendirme
+            }, 1000);
+
         }
         catch(axiosError:any)
         {

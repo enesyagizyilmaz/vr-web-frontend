@@ -3,9 +3,9 @@ import Welcome from "../common/Welcome";
 import Result from "../common/Result";
 import TestHandler from "../common/TestQuestions";
 import {AuthContext} from "../../../../context/AuthContext";
-import {getTest6Grade5, postScoreApi} from "../../../../api/ApiService";
+import {getTest9Grade5, postScoreApi} from "../../../../api/ApiService";
 
-const Test6Grade5 = () =>
+const Test9Grade5 = () =>
 {
     const [score, setScore] = useState<any>(null);
     const [selectedOptions, setSelectedOptions] = useState<any>([null, null]);
@@ -21,7 +21,7 @@ const Test6Grade5 = () =>
         {
             try
             {
-                const response = await getTest6Grade5();
+                const response = await getTest9Grade5();
                 setQuestion(response.data);
             }
             catch (error)
@@ -56,7 +56,7 @@ const Test6Grade5 = () =>
                 userId: userId,
                 score: score,
                 grade: "Grade 5",
-                testNumber: "Test 6",
+                testNumber: "Test 9",
             };
             await postScoreApi(data);
 
@@ -88,13 +88,13 @@ const Test6Grade5 = () =>
 
     return(
         <>
-            {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'UNIT 2: The World of Living Things: Test 6 - Grade 5'}/>}
+            {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'UNIT 3: Measurement of Force and Friction: Test 9 - Grade 5'}/>}
 
-            {finishTest && <Result testName={'UNIT 2: The World of Living Things: Test 6 - Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
+            {finishTest && <Result testName={'UNIT 3: Measurement of Force and Friction: Test 9 - Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
 
-            {!finishTest && showQuestions && <TestHandler title={'UNIT 2: The World of Living Things: Test 6 - Grade 5'} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+            {!finishTest && showQuestions && <TestHandler title={'UNIT 3: Measurement of Force and Friction: Test 9 - Grade 5'} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
         </>
     )
 }
 
-export default Test6Grade5;
+export default Test9Grade5;

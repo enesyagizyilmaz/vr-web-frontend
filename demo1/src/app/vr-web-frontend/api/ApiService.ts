@@ -37,6 +37,21 @@ export const getTest6Grade5 = () =>
     return apiClient.get("/api/questions/test6grade5")
 };
 
+export const getTest7Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test7grade5")
+};
+
+export const getTest8Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test8grade5")
+};
+
+export const getTest9Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test9grade5")
+};
+
 export const signUpApi = (body) =>
 {
     return apiClient.post(`/api/v1/users`,body);

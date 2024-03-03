@@ -88,11 +88,11 @@ const Test5Grade5 = () =>
 
     return(
         <>
-            {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'Test 5 | Grade 5'}/>}
+            {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'UNIT 2: The World of Living Things: Test 5 - Grade 5'}/>}
 
-            {finishTest && <Result testName={'Test 5 | Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
+            {finishTest && <Result testName={'UNIT 2:The World of Living Things: Test 5 - Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
 
-            {!finishTest && showQuestions && <TestHandler questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+            {!finishTest && showQuestions && <TestHandler title={'UNIT 2: The World of Living Things: Test 5 - Grade 5'} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
         </>
     )
 }

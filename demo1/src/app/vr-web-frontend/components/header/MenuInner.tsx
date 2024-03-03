@@ -35,50 +35,7 @@ export function MenuInner() {
         </MenuInnerWithSub>
       </MenuInnerWithSub>
 
-      <MenuInnerWithSub
-          title='TESTS'
-          to=''
-          menuPlacement='bottom-start'
-          menuTrigger='click'
-      >
-        <MenuInnerWithSub
-            title='5. Grade'
-            to=''
-            fontIcon='bi-layers'
-            hasArrow={true}
-            menuPlacement='right-start'
-            menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='tests/grade-5/test-1' title='Test 1' hasBullet={true} />
-          <MenuItem to='tests/grade-5/test-2' title='Test 2' hasBullet={true} />
-        </MenuInnerWithSub>
 
-        <MenuInnerWithSub
-            title='6. Grade'
-            to=''
-            fontIcon='bi-layers'
-            hasArrow={true}
-            menuPlacement='right-start'
-            menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='tests/grade-6/test-1' title='Test 1' hasBullet={true} />
-          <MenuItem to='tests/grade-6/test-2' title='Test 2' hasBullet={true} />
-        </MenuInnerWithSub>
-
-        <MenuInnerWithSub
-            title='7. Grade'
-            to=''
-            fontIcon='bi-layers'
-            hasArrow={true}
-            menuPlacement='right-start'
-            menuTrigger={`{default:'click', lg: 'hover'}`}
-        >
-          <MenuItem to='tests/grade-7/test-1' title='Test 1' hasBullet={true} />
-          <MenuItem to='tests/grade-7/test-2' title='Test 2' hasBullet={true} />
-        </MenuInnerWithSub>
-
-
-      </MenuInnerWithSub>
     </>
   )
 }

@@ -66,33 +66,33 @@ const SidebarMenuMain = () => {
             </SidebarMenuItemWithSub>
 
             <SidebarMenuItemWithSub to='/crafted/pages/profile' title='UNIT 3: Measurement of Force and Friction' hasBullet={true}>
-                <SidebarMenuItem to='/crafted/pages/profile/overview' title='Test 7 (easy)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 8 (normal)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 9 (hard)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-7' title='Test 7 (easy)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-8' title='Test 8 (normal)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-9' title='Test 9 (hard)' hasBullet={true} />
             </SidebarMenuItemWithSub>
 
             <SidebarMenuItemWithSub to='/crafted/pages/profile' title='UNIT 4: Matter and Change' hasBullet={true}>
-                <SidebarMenuItem to='/crafted/pages/profile/overview' title='Test 10 (easy)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 11 (normal)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 12 (hard)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-10' title='Test 10 (easy)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-11' title='Test 11 (normal)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-12' title='Test 12 (hard)' hasBullet={true} />
             </SidebarMenuItemWithSub>
 
             <SidebarMenuItemWithSub to='/crafted/pages/profile' title='UNIT 5: Propagation of Light' hasBullet={true}>
-                <SidebarMenuItem to='/crafted/pages/profile/overview' title='Test 13 (easy)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 14 (normal)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 15 (hard)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-13' title='Test 13 (easy)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-14' title='Test 14 (normal)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-15' title='Test 15 (hard)' hasBullet={true} />
             </SidebarMenuItemWithSub>
 
             <SidebarMenuItemWithSub to='/crafted/pages/profile' title='UNIT 6: Human and Environment' hasBullet={true}>
-                <SidebarMenuItem to='/crafted/pages/profile/overview' title='Test 16 (easy)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 17 (normal)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 18 (hard)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-16' title='Test 16 (easy)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-17' title='Test 17 (normal)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-18' title='Test 18 (hard)' hasBullet={true} />
             </SidebarMenuItemWithSub>
 
             <SidebarMenuItemWithSub to='/crafted/pages/profile' title='UNIT 7: Electrical Circuit Elements' hasBullet={true}>
-                <SidebarMenuItem to='/crafted/pages/profile/overview' title='Test 19 (easy)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 20 (normal)' hasBullet={true} />
-                <SidebarMenuItem to='/crafted/pages/profile/projects' title='Test 21 (hard)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-19' title='Test 19 (easy)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-20' title='Test 20 (normal)' hasBullet={true} />
+                <SidebarMenuItem to='tests/grade-5/test-21' title='Test 21 (hard)' hasBullet={true} />
             </SidebarMenuItemWithSub>
         </SidebarMenuItemWithSub>
 

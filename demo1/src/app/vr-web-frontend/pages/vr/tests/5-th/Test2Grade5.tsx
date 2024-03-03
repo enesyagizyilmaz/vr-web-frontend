@@ -87,11 +87,11 @@ const Test2Grade5 = () =>
 
     return(
         <>
-            {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'Test 2 | Grade 5'}/>}
+            {!showQuestions && <Welcome handleShowQuestion={handleShowQuestion} testTitle={'UNIT 1: Sun, Earth and Moon: Test 2 - Grade 5'}/>}
 
-            {finishTest && <Result testName={'Test 2 | Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
+            {finishTest && <Result testName={'UNIT 1: Sun, Earth and Moon: Test 2 - Grade 5'} wrongAnswers={wrongAnswers} questions={question} score={score}/>}
 
-            {!finishTest && showQuestions && <TestHandler questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+            {!finishTest && showQuestions && <TestHandler title={'UNIT 1: Sun, Earth and Moon: Test 2 - Grade 5'} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
         </>
     )
 }

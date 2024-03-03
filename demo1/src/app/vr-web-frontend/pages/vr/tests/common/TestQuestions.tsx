@@ -10,13 +10,15 @@ interface TestQuestionsProps {
     selectedOptions: string[];
     handleOptionChange: (index: number, optionId: string) => void;
     calculateScore: () => void;
+
+    title: string
 }
 
-const TestHandler: React.FC<TestQuestionsProps> = ({ questions, selectedOptions, handleOptionChange, calculateScore }) => {
+const TestHandler: React.FC<TestQuestionsProps> = ({ questions, selectedOptions, handleOptionChange, calculateScore, title}) => {
     return (
         <div className="card shadow-sm">
             <div className="card-body">
-                <h1>Test 1 | Grade 5</h1>
+                <h1>{title}</h1>
             </div>
 
             <div className="card-footer">
