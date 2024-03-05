@@ -10,22 +10,17 @@ import Video2 from "../pages/vr/simulation-videos/Video2";
 import Video3 from "../pages/vr/simulation-videos/Video3";
 import Video4 from "../pages/vr/simulation-videos/Video4";
 import Video5 from "../pages/vr/simulation-videos/Video5";
-import Test1Grade5 from "../pages/vr/tests/5-th/Test1Grade5";
-import Test2Grade5 from "../pages/vr/tests/5-th/Test2Grade5";
-import Test1Grade6 from "../pages/vr/tests/6-th/Test1Grade6";
-import Test2Grade6 from "../pages/vr/tests/6-th/Test2Grade6";
-import Test1Grade7 from "../pages/vr/tests/7-th/Test1Grade7";
-import Test2Grade7 from "../pages/vr/tests/7-th/Test2Grade7";
 import WhatIsVR from "../pages/about/WhatIsVR";
 import OurPlatform from "../pages/about/OurPlatform";
 import AccountSettings from "../components/header/profile/AccountSettings";
-import Test3Grade5 from "../pages/vr/tests/5-th/Test3Grade5";
-import Test4Grade5 from "../pages/vr/tests/5-th/Test4Grade5";
-import Test5Grade5 from "../pages/vr/tests/5-th/Test5Grade5";
-import Test6Grade5 from "../pages/vr/tests/5-th/Test6Grade5";
-import Test7Grade5 from "../pages/vr/tests/5-th/Test7Grade5";
-import Test8Grade5 from "../pages/vr/tests/5-th/Test8Grade5";
-import Test9Grade5 from "../pages/vr/tests/5-th/Test9Grade5";
+import {
+  Test1Grade5, Test1Grade6, Test1Grade7,
+  Test2Grade5, Test2Grade6, Test2Grade7,
+  Test3Grade5, Test3Grade6, Test3Grade7,
+  Test4Grade5,
+  Test5Grade5,
+  Test6Grade5, Test7Grade5, Test8Grade5, Test9Grade5
+} from "../pages/vr/tests/TestPage";
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../components/header/profile/ProfilePage'))
@@ -59,9 +54,11 @@ const PrivateRoutes = () => {
 
         <Route path={'tests/grade-6/test-1'} element={<Test1Grade6/>}></Route>
         <Route path={'tests/grade-6/test-2'} element={<Test2Grade6/>}></Route>
+        <Route path={'tests/grade-6/test-3'} element={<Test3Grade6/>}></Route>
 
         <Route path={'tests/grade-7/test-1'} element={<Test1Grade7/>}></Route>
         <Route path={'tests/grade-7/test-2'} element={<Test2Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-3'} element={<Test3Grade7/>}></Route>
 
         <Route path={'account/settings'} element={<AccountSettings/>}></Route>
 

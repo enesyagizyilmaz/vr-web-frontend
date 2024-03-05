@@ -1,5 +1,5 @@
 import React from 'react'
-import {toAbsoluteUrl} from "../../../../../../_metronic/helpers";
+import {toAbsoluteUrl} from "../../../../../_metronic/helpers";
 
 type Props = {
     className: string | undefined

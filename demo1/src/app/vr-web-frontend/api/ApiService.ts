@@ -7,6 +7,7 @@ const apiClient = axios.create
     }
 );
 
+//ACHIEVEMENT API's
 export const getUnit1Grade5Achievements = () =>
 {
     return apiClient.get("/api/achievements/unit1grade5achievement");
@@ -22,6 +23,17 @@ export const getUnit3Grade5Achievements = () =>
     return apiClient.get("/api/achievements/unit3grade5achievement");
 };
 
+export const getUnit1Grade6Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit1grade6achievement");
+};
+
+export const getUnit1Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit1grade7achievement");
+};
+
+//TEST(QUIZ) API's
 export const getTest1Grade5 = () =>
 {
     return apiClient.get("/api/questions/test1grade5");
@@ -67,6 +79,37 @@ export const getTest9Grade5 = () =>
     return apiClient.get("/api/questions/test9grade5");
 };
 
+export const getTest1Grade6 = () =>
+{
+    return apiClient.get("/api/questions/test1grade6");
+};
+
+export const getTest2Grade6 = () =>
+{
+    return apiClient.get("/api/questions/test2grade6");
+};
+
+export const getTest3Grade6 = () =>
+{
+    return apiClient.get("/api/questions/test3grade6");
+};
+
+export const getTest1Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test1grade7");
+};
+
+export const getTest2Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test2grade7");
+};
+
+export const getTest3Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test3grade7");
+};
+
+//AUTHENTICATION API's
 export const signUpApi = (body) =>
 {
     return apiClient.post(`/api/v1/users`,body);
@@ -77,6 +120,7 @@ export const login = (credentials) =>
   return apiClient.post("/api/v1/auth",credentials);
 };
 
+//SCORE API's
 export const getUserCountApi = () =>
 {
   return apiClient.get("/api/v1/user-count");
