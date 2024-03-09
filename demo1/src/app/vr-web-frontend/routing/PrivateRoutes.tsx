@@ -14,12 +14,30 @@ import WhatIsVR from "../pages/about/WhatIsVR";
 import OurPlatform from "../pages/about/OurPlatform";
 import AccountSettings from "../components/header/profile/AccountSettings";
 import {
-  Test1Grade5, Test1Grade6, Test1Grade7,
-  Test2Grade5, Test2Grade6, Test2Grade7,
-  Test3Grade5, Test3Grade6, Test3Grade7,
+  Test10Grade5,
+  Test11Grade5,
+  Test12Grade5,
+  Test13Grade5,
+  Test14Grade5,
+  Test15Grade5,
+  Test16Grade5,
+  Test17Grade5,
+  Test18Grade5, Test19Grade5,
+  Test1Grade5,
+  Test1Grade6,
+  Test1Grade7, Test20Grade5, Test21Grade5,
+  Test2Grade5,
+  Test2Grade6,
+  Test2Grade7,
+  Test3Grade5,
+  Test3Grade6,
+  Test3Grade7,
   Test4Grade5,
   Test5Grade5,
-  Test6Grade5, Test7Grade5, Test8Grade5, Test9Grade5
+  Test6Grade5,
+  Test7Grade5,
+  Test8Grade5,
+  Test9Grade5
 } from "../pages/vr/tests/TestPage";
 
 const PrivateRoutes = () => {
@@ -51,6 +69,18 @@ const PrivateRoutes = () => {
         <Route path={'tests/grade-5/test-7'} element={<Test7Grade5/>}></Route>
         <Route path={'tests/grade-5/test-8'} element={<Test8Grade5/>}></Route>
         <Route path={'tests/grade-5/test-9'} element={<Test9Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-10'} element={<Test10Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-11'} element={<Test11Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-12'} element={<Test12Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-13'} element={<Test13Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-14'} element={<Test14Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-15'} element={<Test15Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-16'} element={<Test16Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-17'} element={<Test17Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-18'} element={<Test18Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-19'} element={<Test19Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-20'} element={<Test20Grade5/>}></Route>
+        <Route path={'tests/grade-5/test-21'} element={<Test21Grade5/>}></Route>
 
         <Route path={'tests/grade-6/test-1'} element={<Test1Grade6/>}></Route>
         <Route path={'tests/grade-6/test-2'} element={<Test2Grade6/>}></Route>

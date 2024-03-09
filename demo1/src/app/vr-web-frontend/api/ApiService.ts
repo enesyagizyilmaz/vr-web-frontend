@@ -23,6 +23,26 @@ export const getUnit3Grade5Achievements = () =>
     return apiClient.get("/api/achievements/unit3grade5achievement");
 };
 
+export const getUnit4Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit4grade5achievement");
+};
+
+export const getUnit5Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit5grade5achievement");
+};
+
+export const getUnit6Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit6grade5achievement");
+};
+
+export const getUnit7Grade5Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit7grade5achievement");
+};
+
 export const getUnit1Grade6Achievements = () =>
 {
     return apiClient.get("/api/achievements/unit1grade6achievement");
@@ -77,6 +97,64 @@ export const getTest8Grade5 = () =>
 export const getTest9Grade5 = () =>
 {
     return apiClient.get("/api/questions/test9grade5");
+};
+export const getTest10Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test10grade5");
+};
+
+export const getTest11Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test11grade5");
+};
+
+export const getTest12Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test12grade5");
+};
+
+export const getTest13Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test13grade5");
+};
+
+export const getTest14Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test14grade5");
+};
+
+export const getTest15Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test15grade5");
+};
+
+export const getTest16Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test16grade5");
+};
+
+export const getTest17Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test17grade5");
+};
+
+export const getTest18Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test18grade5");
+};
+
+export const getTest19Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test19grade5");
+};
+export const getTest20Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test20grade5");
+};
+
+export const getTest21Grade5 = () =>
+{
+    return apiClient.get("/api/questions/test21grade5");
 };
 
 export const getTest1Grade6 = () =>
