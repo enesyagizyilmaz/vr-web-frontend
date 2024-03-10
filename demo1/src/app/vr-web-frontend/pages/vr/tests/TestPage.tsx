@@ -1,15 +1,27 @@
 import TestComponent from "./TestComponent";
 import {
     getTest10Grade5,
+    getTest10Grade6,
     getTest11Grade5,
+    getTest11Grade6,
     getTest12Grade5,
+    getTest12Grade6,
     getTest13Grade5,
+    getTest13Grade6,
     getTest14Grade5,
+    getTest14Grade6,
     getTest15Grade5,
-    getTest16Grade5, getTest17Grade5, getTest18Grade5, getTest19Grade5,
+    getTest15Grade6,
+    getTest16Grade5,
+    getTest16Grade6,
+    getTest17Grade5, getTest17Grade6,
+    getTest18Grade5, getTest18Grade6,
+    getTest19Grade5, getTest19Grade6,
     getTest1Grade5,
     getTest1Grade6,
-    getTest1Grade7, getTest20Grade5, getTest21Grade5,
+    getTest1Grade7,
+    getTest20Grade5, getTest20Grade6,
+    getTest21Grade5, getTest21Grade6,
     getTest2Grade5,
     getTest2Grade6,
     getTest2Grade7,
@@ -17,18 +29,31 @@ import {
     getTest3Grade6,
     getTest3Grade7,
     getTest4Grade5,
+    getTest4Grade6,
     getTest5Grade5,
+    getTest5Grade6,
     getTest6Grade5,
+    getTest6Grade6,
     getTest7Grade5,
+    getTest7Grade6,
     getTest8Grade5,
+    getTest8Grade6,
     getTest9Grade5,
+    getTest9Grade6,
     getUnit1Grade5Achievements,
     getUnit1Grade6Achievements,
     getUnit1Grade7Achievements,
     getUnit2Grade5Achievements,
+    getUnit2Grade6Achievements,
     getUnit3Grade5Achievements,
+    getUnit3Grade6Achievements,
     getUnit4Grade5Achievements,
-    getUnit5Grade5Achievements, getUnit6Grade5Achievements, getUnit7Grade5Achievements
+    getUnit4Grade6Achievements,
+    getUnit5Grade5Achievements,
+    getUnit5Grade6Achievements,
+    getUnit6Grade5Achievements,
+    getUnit6Grade6Achievements,
+    getUnit7Grade5Achievements, getUnit7Grade6Achievements
 } from "../../../api/ApiService";
 import React from "react";
 
@@ -376,6 +401,264 @@ const Test3Grade6 = () =>
     )
 };
 
+//GRADE 6 - UNIT 2
+const Test4Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 2: Systems in Our Body"}
+            testTitle={'Unit 2: Systems in Our Body: Test 4 - Grade 6'}
+            testNumber={'Test 4'}
+            grade={"Grade 6"}
+            getTestFunction={getTest4Grade6}
+            getAchievements={getUnit2Grade6Achievements}
+        />
+    )
+};
+
+const Test5Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 2: Systems in Our Body"}
+            testTitle={'Unit 2: Systems in Our Body: Test 5 - Grade 6'}
+            testNumber={'Test 5'}
+            grade={"Grade 6"}
+            getTestFunction={getTest5Grade6}
+            getAchievements={getUnit2Grade6Achievements}
+        />
+    )
+};
+
+const Test6Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 2: Systems in Our Body"}
+            testTitle={'Unit 2: Systems in Our Body: Test 6 - Grade 6'}
+            testNumber={'Test 6'}
+            grade={"Grade 6"}
+            getTestFunction={getTest6Grade6}
+            getAchievements={getUnit2Grade6Achievements}
+        />
+    )
+};
+
+//GRADE 6 - UNIT 3
+const Test7Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 3: Force and Motion"}
+            testTitle={'Unit 3: Force and Motion: Test 7 - Grade 6'}
+            testNumber={'Test 7'}
+            grade={"Grade 6"}
+            getTestFunction={getTest7Grade6}
+            getAchievements={getUnit3Grade6Achievements}
+        />
+    )
+};
+
+const Test8Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 3: Force and Motion"}
+            testTitle={'Unit 3: Force and Motion: Test 8 - Grade 6'}
+            testNumber={'Test 8'}
+            grade={"Grade 6"}
+            getTestFunction={getTest8Grade6}
+            getAchievements={getUnit3Grade6Achievements}
+        />
+    )
+};
+
+const Test9Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 3: Force and Motion"}
+            testTitle={'Unit 3: Force and Motion: Test 9 - Grade 6'}
+            testNumber={'Test 9'}
+            grade={"Grade 6"}
+            getTestFunction={getTest9Grade6}
+            getAchievements={getUnit3Grade6Achievements}
+        />
+    )
+};
+
+//GRADE 6 - UNIT 4
+const Test10Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 4: Matter and Heat"}
+            testTitle={'Unit 3: Force and Motion: Test 10 - Grade 6'}
+            testNumber={'Test 10'}
+            grade={"Grade 6"}
+            getTestFunction={getTest10Grade6}
+            getAchievements={getUnit4Grade6Achievements}
+        />
+    )
+};
+
+const Test11Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 4: Matter and Heat"}
+            testTitle={'Unit 3: Force and Motion: Test 11 - Grade 6'}
+            testNumber={'Test 11'}
+            grade={"Grade 6"}
+            getTestFunction={getTest11Grade6}
+            getAchievements={getUnit4Grade6Achievements}
+        />
+    )
+};
+
+const Test12Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 4: Matter and Heat"}
+            testTitle={'Unit 3: Force and Motion: Test 12 - Grade 6'}
+            testNumber={'Test 12'}
+            grade={"Grade 6"}
+            getTestFunction={getTest12Grade6}
+            getAchievements={getUnit4Grade6Achievements}
+        />
+    )
+};
+
+//GRADE 6 - UNIT 5
+const Test13Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 5: Sound and Its Properties"}
+            testTitle={'Unit 5: Sound and Its Properties: Test 13 - Grade 6'}
+            testNumber={'Test 13'}
+            grade={"Grade 6"}
+            getTestFunction={getTest13Grade6}
+            getAchievements={getUnit5Grade6Achievements}
+        />
+    )
+};
+
+const Test14Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 5: Sound and Its Properties"}
+            testTitle={'Unit 5: Sound and Its Properties: Test 14 - Grade 6'}
+            testNumber={'Test 14'}
+            grade={"Grade 6"}
+            getTestFunction={getTest14Grade6}
+            getAchievements={getUnit5Grade6Achievements}
+        />
+    )
+};
+
+const Test15Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 5: Sound and Its Properties"}
+            testTitle={'Unit 5: Sound and Its Properties: Test 15 - Grade 6'}
+            testNumber={'Test 15'}
+            grade={"Grade 6"}
+            getTestFunction={getTest15Grade6}
+            getAchievements={getUnit5Grade6Achievements}
+        />
+    )
+};
+
+//GRADE 6 - UNIT 6
+const Test16Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 6: Our Body Systems and Health"}
+            testTitle={'Unit 6: Our Body Systems and Health: Test 16 - Grade 6'}
+            testNumber={'Test 16'}
+            grade={"Grade 6"}
+            getTestFunction={getTest16Grade6}
+            getAchievements={getUnit6Grade6Achievements}
+        />
+    )
+};
+
+const Test17Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 6: Our Body Systems and Health"}
+            testTitle={'Unit 6: Our Body Systems and Health: Test 17 - Grade 6'}
+            testNumber={'Test 17'}
+            grade={"Grade 6"}
+            getTestFunction={getTest17Grade6}
+            getAchievements={getUnit6Grade6Achievements}
+        />
+    )
+};
+
+const Test18Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 6: Our Body Systems and Health"}
+            testTitle={'Unit 6: Our Body Systems and Health: Test 17 - Grade 6'}
+            testNumber={'Test 18'}
+            grade={"Grade 6"}
+            getTestFunction={getTest18Grade6}
+            getAchievements={getUnit6Grade6Achievements}
+        />
+    )
+};
+
+//GRADE 6 - UNIT 7
+const Test19Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 7: Conduction of Electricity"}
+            testTitle={'Unit 7: Conduction of Electricity: Test 19 - Grade 6'}
+            testNumber={'Test 19'}
+            grade={"Grade 6"}
+            getTestFunction={getTest19Grade6}
+            getAchievements={getUnit7Grade6Achievements}
+        />
+    )
+};
+
+const Test20Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 7: Conduction of Electricity"}
+            testTitle={'Unit 7: Conduction of Electricity: Test 20 - Grade 6'}
+            testNumber={'Test 20'}
+            grade={"Grade 6"}
+            getTestFunction={getTest20Grade6}
+            getAchievements={getUnit7Grade6Achievements}
+        />
+    )
+};
+
+const Test21Grade6 = () =>
+{
+    return(
+        <TestComponent
+            achievementTitle={"Achievements: Unit 7: Conduction of Electricity"}
+            testTitle={'Unit 7: Conduction of Electricity: Test 21 - Grade 6'}
+            testNumber={'Test 21'}
+            grade={"Grade 6"}
+            getTestFunction={getTest21Grade6}
+            getAchievements={getUnit7Grade6Achievements}
+        />
+    )
+};
+
 //GRADE 7 - UNIT 1
 const Test1Grade7 = () =>
 {
@@ -426,5 +709,8 @@ export
     Test2Grade6, Test3Grade6, Test1Grade7, Test2Grade7, Test3Grade7,
     Test10Grade5, Test11Grade5, Test12Grade5, Test13Grade5, Test14Grade5,
     Test15Grade5, Test16Grade5, Test17Grade5, Test18Grade5, Test19Grade5,
-    Test20Grade5, Test21Grade5
+    Test20Grade5, Test21Grade5, Test4Grade6, Test5Grade6, Test6Grade6,
+    Test7Grade6, Test8Grade6, Test9Grade6, Test10Grade6, Test11Grade6,
+    Test12Grade6, Test13Grade6, Test14Grade6, Test15Grade6, Test16Grade6,
+    Test17Grade6, Test18Grade6, Test19Grade6, Test20Grade6, Test21Grade6
 };
