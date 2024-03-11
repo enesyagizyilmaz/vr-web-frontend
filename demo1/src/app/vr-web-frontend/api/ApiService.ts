@@ -83,6 +83,36 @@ export const getUnit1Grade7Achievements = () =>
     return apiClient.get("/api/achievements/unit1grade7achievement");
 };
 
+export const getUnit2Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit2grade7achievement");
+};
+
+export const getUnit3Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit3grade7achievement");
+};
+
+export const getUnit4Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit4grade7achievement");
+};
+
+export const getUnit5Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit5grade7achievement");
+};
+
+export const getUnit6Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit6grade7achievement");
+};
+
+export const getUnit7Grade7Achievements = () =>
+{
+    return apiClient.get("/api/achievements/unit7grade7achievement");
+};
+
 //TEST(QUIZ) API's
 export const getTest1Grade5 = () =>
 {
@@ -305,6 +335,96 @@ export const getTest2Grade7 = () =>
 export const getTest3Grade7 = () =>
 {
     return apiClient.get("/api/questions/test3grade7");
+};
+
+export const getTest4Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test4grade7");
+};
+
+export const getTest5Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test5grade7");
+};
+
+export const getTest6Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test6grade7");
+};
+
+export const getTest7Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test7grade7");
+};
+
+export const getTest8Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test8grade7");
+};
+
+export const getTest9Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test9grade7");
+};
+
+export const getTest10Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test10grade7");
+};
+
+export const getTest11Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test11grade7");
+};
+
+export const getTest12Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test12grade7");
+};
+
+export const getTest13Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test13grade7");
+};
+
+export const getTest14Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test14grade7");
+};
+
+export const getTest15Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test15grade7");
+};
+
+export const getTest16Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test16grade7");
+};
+
+export const getTest17Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test17grade7");
+};
+
+export const getTest18Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test18grade7");
+};
+
+export const getTest19Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test19grade7");
+};
+
+export const getTest20Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test20grade7");
+};
+
+export const getTest21Grade7 = () =>
+{
+    return apiClient.get("/api/questions/test21grade7");
 };
 
 //AUTHENTICATION API's

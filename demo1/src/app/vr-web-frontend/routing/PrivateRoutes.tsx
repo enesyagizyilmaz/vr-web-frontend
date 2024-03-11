@@ -14,30 +14,30 @@ import WhatIsVR from "../pages/about/WhatIsVR";
 import OurPlatform from "../pages/about/OurPlatform";
 import AccountSettings from "../components/header/profile/AccountSettings";
 import {
-  Test10Grade5, Test10Grade6,
-  Test11Grade5, Test11Grade6,
-  Test12Grade5, Test12Grade6,
-  Test13Grade5, Test13Grade6,
-  Test14Grade5, Test14Grade6,
-  Test15Grade5, Test15Grade6,
-  Test16Grade5, Test16Grade6,
-  Test17Grade5, Test17Grade6,
-  Test18Grade5, Test18Grade6, Test19Grade5, Test19Grade6,
+  Test10Grade5, Test10Grade6, Test10Grade7,
+  Test11Grade5, Test11Grade6, Test11Grade7,
+  Test12Grade5, Test12Grade6, Test12Grade7,
+  Test13Grade5, Test13Grade6, Test13Grade7,
+  Test14Grade5, Test14Grade6, Test14Grade7,
+  Test15Grade5, Test15Grade6, Test15Grade7,
+  Test16Grade5, Test16Grade6, Test16Grade7,
+  Test17Grade5, Test17Grade6, Test17Grade7,
+  Test18Grade5, Test18Grade6, Test18Grade7, Test19Grade5, Test19Grade6, Test19Grade7,
   Test1Grade5,
   Test1Grade6,
-  Test1Grade7, Test20Grade5, Test20Grade6, Test21Grade5, Test21Grade6,
+  Test1Grade7, Test20Grade5, Test20Grade6, Test20Grade7, Test21Grade5, Test21Grade6, Test21Grade7,
   Test2Grade5,
   Test2Grade6,
   Test2Grade7,
   Test3Grade5,
   Test3Grade6,
   Test3Grade7,
-  Test4Grade5, Test4Grade6,
-  Test5Grade5, Test5Grade6,
-  Test6Grade5, Test6Grade6,
-  Test7Grade5, Test7Grade6,
-  Test8Grade5, Test8Grade6,
-  Test9Grade5, Test9Grade6
+  Test4Grade5, Test4Grade6, Test4Grade7,
+  Test5Grade5, Test5Grade6, Test5Grade7,
+  Test6Grade5, Test6Grade6, Test6Grade7,
+  Test7Grade5, Test7Grade6, Test7Grade7,
+  Test8Grade5, Test8Grade6, Test8Grade7,
+  Test9Grade5, Test9Grade6, Test9Grade7
 } from "../pages/vr/tests/TestPage";
 
 const PrivateRoutes = () => {
@@ -107,6 +107,24 @@ const PrivateRoutes = () => {
         <Route path={'tests/grade-7/test-1'} element={<Test1Grade7/>}></Route>
         <Route path={'tests/grade-7/test-2'} element={<Test2Grade7/>}></Route>
         <Route path={'tests/grade-7/test-3'} element={<Test3Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-4'} element={<Test4Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-5'} element={<Test5Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-6'} element={<Test6Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-7'} element={<Test7Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-8'} element={<Test8Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-9'} element={<Test9Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-10'} element={<Test10Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-11'} element={<Test11Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-12'} element={<Test12Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-13'} element={<Test13Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-14'} element={<Test14Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-15'} element={<Test15Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-16'} element={<Test16Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-17'} element={<Test17Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-18'} element={<Test18Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-19'} element={<Test19Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-20'} element={<Test20Grade7/>}></Route>
+        <Route path={'tests/grade-7/test-21'} element={<Test21Grade7/>}></Route>
 
         <Route path={'account/settings'} element={<AccountSettings/>}></Route>
 
