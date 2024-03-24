@@ -3,9 +3,12 @@ import axios from "axios";
 const apiClient = axios.create
 (
     {
-        baseURL: 'http://localhost:8080'
+        baseURL: 'https://vrevolution.azurewebsites.net'
     }
 );
+
+//https://vrevolution.azurewebsites.net
+//http://localhost:8080
 
 //ACHIEVEMENT API's
 export const getUnit1Grade5Achievements = () =>

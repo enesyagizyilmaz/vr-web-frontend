@@ -15,19 +15,31 @@ interface ScoreData
 const ProfileHeader: React.FC = () => {
   const authState = useContext(AuthContext);
   const [scoreData, setScoreData] = useState<ScoreData[]>([]);
+  const [averageScore, setAverageScore] = useState<number>(0);
 
   useEffect(() =>
   {
     getScoreData();
   }, []);
-  const getScoreData = () =>
-  {
+  const getScoreData = () => {
     getScoreByIdApi(authState.id)
         .then(response => {
-          setScoreData(response.data)
+          setScoreData(response.data);
+          const avgScore = calculateAverageScore(response.data);
+          setAverageScore(avgScore);
         })
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
   };
+
+  const calculateAverageScore = (scores) => {
+    if (scores.length === 0) return 0;
+
+    const totalScore = scores.reduce((acc, score) => acc + score.score, 0);
+    const averageScore = totalScore / scores.length;
+
+    return averageScore*20;
+  }
+
 
   return (
     <div className='card mb-5 mb-xl-10'>
@@ -79,6 +91,13 @@ const ProfileHeader: React.FC = () => {
                     </div>
 
                     <div className='fw-bold fs-6 text-gray-400'>Solved Test Number</div>
+                  </div>
+
+                  <div className='border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3'>
+                    <div className='d-flex align-items-center'>
+                      <div className='fs-2 fw-bolder'>{averageScore.toFixed(2)}</div>
+                    </div>
+                    <div className='fw-bold fs-6 text-gray-400'>Average Score</div>
                   </div>
 
                 </div>
