@@ -5,7 +5,7 @@ import {postScoreApi} from "../../../api/ApiService";
 import {AchievementTable} from "./AchievementTable";
 import {AchievementData} from "./AchievementData";
 import Welcome from "./Welcome";
-import TestHandler from "./TestQuestions";
+import TestQuestions from "./TestQuestions";
 interface TestProps
 {
     testTitle: string;
@@ -103,7 +103,7 @@ const TestComponent: React.FC<TestProps> = ({ testTitle, testNumber, getTestFunc
 
             {finishTest && <Result testName={testTitle} wrongAnswers={wrongAnswers} questions={question} score={score} />}
 
-            {!finishTest && showQuestions && <TestHandler title={testTitle} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
+            {!finishTest && showQuestions && <TestQuestions title={testTitle} questions={question} selectedOptions={selectedOptions} handleOptionChange={handleOptionChange} calculateScore={calculateScore} />}
 
             <br />
 
